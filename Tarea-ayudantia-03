@@ -1,0 +1,77 @@
+\documentclass{article}
+% pre\'ambulo
+
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage[spanish,activeacute]{babel}
+\usepackage{mathtools}
+
+\title{Patrones de Diseno}
+\author{Escribe aqui tu nombre}
+\begin{document}
+\maketitle
+
+
+El diseno de Software juega un papel importante en el desarrollo de software lo cual permite 
+al ingeniero de producir varios modelos del sistema que se va a construir, del mismo modo que forman una especie de plan de la solucion de la aplicacion. Estos modelos puede evaluarse en relacion con su calidad y mejorarse antes de generar codigo, de realizar pruebas y de que los usuarios finales se vean involucrados a gran escala. El diseno es el sitio en el que se establece la calidad del software.\\
+ 
+En el desarrollo de software existen problemas que son recurrentes entre distintos proyectos y cada vez que dichos problemas aparecen podemos utilizar una solucion ya probada que sabremos funcionara, es por eso que aparecieron los patrones de diseno.
+
+Los patrones de diseno son una solucion a dichos problemas de diseno. Cada patron describe un problema que ocurre una infinidad de veces en nuestro entorno, asi como la solucion al mismo, de tal modo que podemos utilizar esta solucion un millon de veces mas adelante sin tener que volver a pensarla otra vez.
+
+Para que una solucion sea considerada un patron debe poseer ciertas caracteristicas. Una de ellas es que debe haber comprobado su efectividad resolviendo problemas similares en ocasiones anteriores. Otra es que debe ser reutilizable, lo que significa que es aplicable a diferentes problemas de diseno en distintas circunstancias. 
+
+los patrones se clasifican según el proposito para el que han sido definidos:
+\begin{itemize}
+\item	Creacionales: solucionan problemas de creacion de instancias. Nos ayudan a encapsular y abstraer dicha creacion. 
+\item	Estructurales: solucionan problemas de composicion (agregacion) de clases y objetos. 
+\item De Comportamiento: soluciones respecto a la interaccion y responsabilidades entre clases y objetos, asi como los algoritmos que encapsulan. 
+\end{itemize}
+
+
+"Una arquitectura orientada a objetos bien estructurada esta llena de patrones. La calidad de un sistema orientado a objetos se mide por la atención que los disenadores han prestado a las colaboraciones entre sus objetos. Los patrones conducen a arquitecturas más pequenas, más simples y más comprensibles"
+
+La clave para la reutilización es anticiparse a los nuevos requisitos y cambios, de modo que los sistemas evolucionen de forma adecuada. Cada patrón permite que algunos aspectos de la estructura del sistema puedan cambiar independientemente de otros aspectos. Facilitan la reusabilidad, extensibilidad y mantenimiento.\\
+
+En resumen, un patron es el denominador comun, una estructura que tienen aplicaciones semejantes. Esto tambien ocurre en otros ordenes de la vida. Por ejemplo, en nuestra vida cotidiana aplicamos a menudo el esquema saludo-presentacion-mensaje-despedida en ocasiones diversas, que van desde un intento de ligar hasta dar una conferencia\\
+\\
+
+
+ \textbf{Modelo Vista Controlador}
+\\
+\\
+El modelo vista controlador es un patron de diseño realizado generalmente para el diseño de aplicaciones con sofisticados interfaces. Se trata de realizar un diseño que desacople la vista del modelo, con la finalidad de mejorar la reusabilidad. De esta forma las modificaciones en las vistas impactan en menor medida en la lógica de negocio o de datos. Si realizamos un diseño ofuscado, es decir, un pastiche que mezcle los componentes de interfaz y de negocio, entonces la consecuencia será que, cuando necesitemos cambiar el interfaz, tendremos que modificar trabajosamente los componentes de negocio. Mayor trabajo y más riesgo de error. \\
+El modelo vista controlador se compone de los siguientes elementos:
+\begin{itemize}
+\item Modelo: datos y reglas de negocio.
+\item Vista: muestra la información del modelo al usuario.
+\item Controlador: gestiona las entradas del usuario.
+\end{itemize}
+
+Un modelo puede tener diversas vistas, cada una con su correspondiente controlador. Un ejemplo clásico es el de la información de una base de datos, que se puede presentar de diversas formas: diagrama de tarta, de barras, tabular, etc. Veamos cada componente: \\
+
+El modelo es el responsable de:
+\begin{itemize}
+ 
+\item Acceder a la capa de almacenamiento de datos. Lo ideal es que el modelo sea independiente del sistema de almacenamiento. 
+\item	Define las reglas de negocio (la funcionalidad del sistema). Un ejemplo de regla puede ser: "Si la mercancía pedida no está en el almacén, consultar el tiempo de entrega estándar del proveedor". 
+\item	Lleva un registro de las vistas y controladores del sistema. 
+\item Si estamos ante un modelo activo, notificará a las vistas los cambios que en los datos pueda producir un agente externo (por ejemplo, un fichero bath que actualiza los datos, un temporizador que desencadena una inserción, etc). 
+\end{itemize}
+El controlador es el responsable de:
+\begin{itemize}
+\item Recibe los eventos de entrada (un clic, un cambio en un campo de texto, etc.).
+
+\item Contiene reglas de gestión de eventos, del tipo "SI Evento Z, entonces Acción W". Estas acciones pueden suponer peticiones al modelo o a las vistas. Una de estas peticiones a las vistas puede ser una llamada al método "Actualizar()". Una petición al modelo puede ser 
+ 
+\end{itemize}
+
+Las vistas son las responsables de:
+\begin{itemize}
+\item Recibir datos del modelo y los muestra al usuario
+\item Tienen un registro de su controlador asociado (normalmente porque además lo instancia). 
+\item Pueden dar el servicio de "Actualización()", para que sea invocado por el controlador o por el modelo (cuando es un modelo activo que informa de los cambios en los datos producidos por otros agentes). 
+\end{itemize}
+
+Un ejemplo habitual donde se utiliza el modelo vista controlador es en la creacion de una cuenta de algun sitio web, como por ejemplo un foro. Los foros son el espacio donde las personas pueden dar su opinion en distintos temas. Por ejemplo al crear la cuenta de usuario de dicho foro, nos aparece una vista con el formulario en el cual ingresaremos nuestros datos. Una vez ingresamos nuestros datos y le damos guardar, los datos ingresaos son enviados al controlador donde se ejecutan diferentes metodos, como por ejemplo validacion de datos. Luego el controlador ejecuta metodos para enviar los datos al modelo, donde el modelo interactua con algun motor de base de datos y almacena dichos datos.
+\end{document}
