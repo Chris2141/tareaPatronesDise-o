@@ -3,44 +3,44 @@
 
 \usepackage{lmodern}
 \usepackage[T1]{fontenc}
-\usepackage[spanish,activeacute]{babel}
+\usepackage[spanish]{babel}
 \usepackage{mathtools}
 
-\title{Patrones de Diseno}
-\author{Escribe aqui tu nombre}
+\title{Patrones de Dise\~no}
+\author{Felipe Alvarez - Juan Cortez - Christopher Salvattierra}
 \begin{document}
 \maketitle
 
 
-El diseno de Software juega un papel importante en el desarrollo de software lo cual permite 
-al ingeniero de producir varios modelos del sistema que se va a construir, del mismo modo que forman una especie de plan de la solucion de la aplicacion. Estos modelos puede evaluarse en relacion con su calidad y mejorarse antes de generar codigo, de realizar pruebas y de que los usuarios finales se vean involucrados a gran escala. El diseno es el sitio en el que se establece la calidad del software.\\
+El dise\~no de Software juega un papel importante en el desarrollo de software lo cual permite 
+al ingeniero producir varios modelos del sistema que se va a construir, del mismo modo que forman una especie de plan de la soluci\'on de la aplicaci\'on. Estos modelos puede evaluarse en relacion con su calidad y mejorarse antes de generar c\'odigo, de realizar pruebas y de que los usuarios finales se vean involucrados a gran escala. El dise\~no es el sitio en el que se establece la calidad del software.\\
  
-En el desarrollo de software existen problemas que son recurrentes entre distintos proyectos y cada vez que dichos problemas aparecen podemos utilizar una solucion ya probada que sabremos funcionara, es por eso que aparecieron los patrones de diseno.
+En el desarrollo de software existen problemas que son recurrentes entre distintos proyectos y cada vez que dichos problemas aparecen podemos utilizar una soluci\'on ya probada que sabremos funcionara, es por eso que aparecieron los patrones de dise\~no.
 
-Los patrones de diseno son una solucion a dichos problemas de diseno. Cada patron describe un problema que ocurre una infinidad de veces en nuestro entorno, asi como la solucion al mismo, de tal modo que podemos utilizar esta solucion un millon de veces mas adelante sin tener que volver a pensarla otra vez.
+Los patrones de dise\~no son una soluci\'on a dichos problemas de dise\~no. Cada patr\'on describe un problema que ocurre una infinidad de veces en nuestro entorno, asi como la soluci\'on al mismo, de tal modo que podemos utilizar esta soluci\'on un mill\'on de veces mas adelante sin tener que volver a pensarla otra vez.
 
-Para que una solucion sea considerada un patron debe poseer ciertas caracteristicas. Una de ellas es que debe haber comprobado su efectividad resolviendo problemas similares en ocasiones anteriores. Otra es que debe ser reutilizable, lo que significa que es aplicable a diferentes problemas de diseno en distintas circunstancias. 
+Para que una soluci\'on sea considerada un patr\'on debe poseer ciertas caracter\'isticas. Una de ellas es que debe haber comprobado su efectividad resolviendo problemas similares en ocasiones anteriores. Otra es que debe ser re utilizable, lo que significa que es aplicable a diferentes problemas de dise\~no en distintas circunstancias. 
 
 los patrones se clasifican según el proposito para el que han sido definidos:
 \begin{itemize}
-\item	Creacionales: solucionan problemas de creacion de instancias. Nos ayudan a encapsular y abstraer dicha creacion. 
-\item	Estructurales: solucionan problemas de composicion (agregacion) de clases y objetos. 
-\item De Comportamiento: soluciones respecto a la interaccion y responsabilidades entre clases y objetos, asi como los algoritmos que encapsulan. 
+\item	Creacionales: solucionan problemas de creaci\'on de instancias. Nos ayudan a encapsular y abstraer dicha creaci\'on. 
+\item	Estructurales: solucionan problemas de composici\'on (agregaci\'on) de clases y objetos. 
+\item De Comportamiento: soluciones respecto a la interacci\'on y responsabilidades entre clases y objetos, asi como los algoritmos que encapsulan. 
 \end{itemize}
 
 
-"Una arquitectura orientada a objetos bien estructurada esta llena de patrones. La calidad de un sistema orientado a objetos se mide por la atención que los disenadores han prestado a las colaboraciones entre sus objetos. Los patrones conducen a arquitecturas más pequenas, más simples y más comprensibles"
+"Una arquitectura orientada a objetos bien estructurada esta llena de patrones. La calidad de un sistema orientado a objetos se mide por la atención que los dise\~nadores han prestado a las colaboraciones entre sus objetos. Los patrones conducen a arquitecturas más peque\~nas, más simples y más comprensibles"
 
-La clave para la reutilización es anticiparse a los nuevos requisitos y cambios, de modo que los sistemas evolucionen de forma adecuada. Cada patrón permite que algunos aspectos de la estructura del sistema puedan cambiar independientemente de otros aspectos. Facilitan la reusabilidad, extensibilidad y mantenimiento.\\
+La clave para la reutilizaci\'on es anticiparse a los nuevos requisitos y cambios, de modo que los sistemas evolucionen de forma adecuada. Cada patrón permite que algunos aspectos de la estructura del sistema puedan cambiar independientemente de otros aspectos. Facilitan la reusabilidad, extensibilidad y mantenimiento.\\
 
-En resumen, un patron es el denominador comun, una estructura que tienen aplicaciones semejantes. Esto tambien ocurre en otros ordenes de la vida. Por ejemplo, en nuestra vida cotidiana aplicamos a menudo el esquema saludo-presentacion-mensaje-despedida en ocasiones diversas, que van desde un intento de ligar hasta dar una conferencia\\
+En resumen, un patr\'on es el denominador com\'un, una estructura que tienen aplicaciones semejantes. Esto tambi\'en ocurre en otros ordenes de la vida. Por ejemplo, en nuestra vida cotidiana aplicamos a menudo el esquema saludo-presentaci\'on -mensaje-despedida en ocasiones diversas, que van desde un intento de ligar hasta dar una conferencia\\
 \\
 
 
  \textbf{Modelo Vista Controlador}
 \\
 \\
-El modelo vista controlador es un patron de diseño realizado generalmente para el diseño de aplicaciones con sofisticados interfaces. Se trata de realizar un diseño que desacople la vista del modelo, con la finalidad de mejorar la reusabilidad. De esta forma las modificaciones en las vistas impactan en menor medida en la lógica de negocio o de datos. Si realizamos un diseño ofuscado, es decir, un pastiche que mezcle los componentes de interfaz y de negocio, entonces la consecuencia será que, cuando necesitemos cambiar el interfaz, tendremos que modificar trabajosamente los componentes de negocio. Mayor trabajo y más riesgo de error. \\
+El modelo vista controlador es un patr\'on de dise\~no realizado generalmente para el dise\~no de aplicaciones con sofisticados interfaces. Se trata de realizar un dise\~no que desacople la vista del modelo, con la finalidad de mejorar la reusabilidad. De esta forma las modificaciones en las vistas impactan en menor medida en la lógica de negocio o de datos. Si realizamos un dise\~no ofuscado, es decir, un pastiche que mezcle los componentes de interfaz y de negocio, entonces la consecuencia ser\'a que, cuando necesitemos cambiar el interfaz, tendremos que modificar trabajosamente los componentes de negocio. Mayor trabajo y más riesgo de error. \\
 El modelo vista controlador se compone de los siguientes elementos:
 \begin{itemize}
 \item Modelo: datos y reglas de negocio.
@@ -48,21 +48,21 @@ El modelo vista controlador se compone de los siguientes elementos:
 \item Controlador: gestiona las entradas del usuario.
 \end{itemize}
 
-Un modelo puede tener diversas vistas, cada una con su correspondiente controlador. Un ejemplo clásico es el de la información de una base de datos, que se puede presentar de diversas formas: diagrama de tarta, de barras, tabular, etc. Veamos cada componente: \\
+Un modelo puede tener diversas vistas, cada una con su correspondiente controlador. Un ejemplo cl\'asico es el de la informaci\'on de una base de datos, que se puede presentar de diversas formas: diagrama de tarta, de barras, tabular, etc. Veamos cada componente: \\
 
 El modelo es el responsable de:
 \begin{itemize}
  
 \item Acceder a la capa de almacenamiento de datos. Lo ideal es que el modelo sea independiente del sistema de almacenamiento. 
-\item	Define las reglas de negocio (la funcionalidad del sistema). Un ejemplo de regla puede ser: "Si la mercancía pedida no está en el almacén, consultar el tiempo de entrega estándar del proveedor". 
+\item	Define las reglas de negocio (la funcionalidad del sistema). Un ejemplo de regla puede ser: "Si la mercancía pedida no está en el almac\'en, consultar el tiempo de entrega est\'andar del proveedor". 
 \item	Lleva un registro de las vistas y controladores del sistema. 
-\item Si estamos ante un modelo activo, notificará a las vistas los cambios que en los datos pueda producir un agente externo (por ejemplo, un fichero bath que actualiza los datos, un temporizador que desencadena una inserción, etc). 
+\item Si estamos ante un modelo activo, notificar\'a a las vistas los cambios que en los datos pueda producir un agente externo (por ejemplo, un fichero bath que actualiza los datos, un temporizador que desencadena una inserción, etc). 
 \end{itemize}
 El controlador es el responsable de:
 \begin{itemize}
 \item Recibe los eventos de entrada (un clic, un cambio en un campo de texto, etc.).
 
-\item Contiene reglas de gestión de eventos, del tipo "SI Evento Z, entonces Acción W". Estas acciones pueden suponer peticiones al modelo o a las vistas. Una de estas peticiones a las vistas puede ser una llamada al método "Actualizar()". Una petición al modelo puede ser 
+\item Contiene reglas de gesti\'on de eventos, del tipo "SI Evento Z, entonces Acci\'on W". Estas acciones pueden suponer peticiones al modelo o a las vistas. Una de estas peticiones a las vistas puede ser una llamada al m\'etodo Actualizar(). Una petici\'on al modelo puede ser 
  
 \end{itemize}
 
@@ -70,11 +70,11 @@ Las vistas son las responsables de:
 \begin{itemize}
 \item Recibir datos del modelo y los muestra al usuario
 \item Tienen un registro de su controlador asociado (normalmente porque además lo instancia). 
-\item Pueden dar el servicio de "Actualización()", para que sea invocado por el controlador o por el modelo (cuando es un modelo activo que informa de los cambios en los datos producidos por otros agentes). 
+\item Pueden dar el servicio de Actualización(), para que sea invocado por el controlador o por el modelo (cuando es un modelo activo que informa de los cambios en los datos producidos por otros agentes). 
 \end{itemize}
 
-Un ejemplo que podemos dar de este modelo es por ejemplo al crearnos una cuenta en algun foro. Los foros
-son el espacio donde las personas pueden dar su opinion en distintos temas. Al pinchar el link de "Crear nuevo usuario" (o similar) el controlador toma esa instruccion y nos muestra la vista (una pagina) en dode ingresamos nuestros datos requeridos por un formulario.
-Al llenar los datos el usuario comunmente se da click en un boton de "Enviar" (o similar) al hacer esto el controlador toma los datos y los manda a un metodo especifico del modelo el cual recibe los datos y realiza las consultas necesarias para agregar estos datos a la base de datos.
-El usuario no verá obviamente todo esto, el usuario solo verá que sus datos fueron ingresador y un mensaje de bienvenida al foro, pero por detrás se está realizando las acciones antes descritas.
+Un ejemplo que podemos dar de este modelo es por ejemplo al crearnos una cuenta en alg\'un foro. Los foros
+son el espacio donde las personas pueden dar su opini\'on en distintos temas. Al pinchar el link de "Crear nuevo usuario" (o similar) el controlador toma esa instrucci\'on y nos muestra la vista (una pagina) en donde ingresamos nuestros datos requeridos por un formulario.
+Al llenar los datos el usuario com\'unmente se da click en un bot\'on de \textbf {ENVIAR} (o similar) al hacer esto el controlador toma los datos y los manda a un m\'etodo especifico del modelo el cual recibe los datos y realiza las consultas necesarias para agregar estos datos a la base de datos.
+El usuario no ver\'a obviamente todo esto, el usuario solo ver\'a que sus datos fueron ingresados y un mensaje de bienvenida al foro, pero por detr\'as se est\'a realizando las acciones antes descritas.
 \end{document}
