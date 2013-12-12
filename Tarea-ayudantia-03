@@ -73,5 +73,8 @@ Las vistas son las responsables de:
 \item Pueden dar el servicio de "Actualización()", para que sea invocado por el controlador o por el modelo (cuando es un modelo activo que informa de los cambios en los datos producidos por otros agentes). 
 \end{itemize}
 
-Un ejemplo habitual donde se utiliza el modelo vista controlador es en la creacion de una cuenta de algun sitio web, como por ejemplo un foro. Los foros son el espacio donde las personas pueden dar su opinion en distintos temas. Por ejemplo al crear la cuenta de usuario de dicho foro, nos aparece una vista con el formulario en el cual ingresaremos nuestros datos. Una vez ingresamos nuestros datos y le damos guardar, los datos ingresaos son enviados al controlador donde se ejecutan diferentes metodos, como por ejemplo validacion de datos. Luego el controlador ejecuta metodos para enviar los datos al modelo, donde el modelo interactua con algun motor de base de datos y almacena dichos datos.
+Un ejemplo que podemos dar de este modelo es por ejemplo al crearnos una cuenta en algun foro. Los foros
+son el espacio donde las personas pueden dar su opinion en distintos temas. Al pinchar el link de "Crear nuevo usuario" (o similar) el controlador toma esa instruccion y nos muestra la vista (una pagina) en dode ingresamos nuestros datos requeridos por un formulario.
+Al llenar los datos el usuario comunmente se da click en un boton de "Enviar" (o similar) al hacer esto el controlador toma los datos y los manda a un metodo especifico del modelo el cual recibe los datos y realiza las consultas necesarias para agregar estos datos a la base de datos.
+El usuario no verá obviamente todo esto, el usuario solo verá que sus datos fueron ingresador y un mensaje de bienvenida al foro, pero por detrás se está realizando las acciones antes descritas.
 \end{document}
